@@ -37,3 +37,12 @@ const arr3 : [number,number,string] =[1,2,'33']
 
 const obj :{lat:number,lon:number} = {lat:12,lon:2}
 ```
+
+### 타입추론을 정확하게 활용할것
+
+```
+function add(x:number,y:number):number {return x+y}
+const result = add(1,5)
+```
+
+result 의 타입을 지정안해도 number라는것을 추론해준다
