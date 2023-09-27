@@ -46,3 +46,18 @@ const result = add(1,5)
 ```
 
 result 의 타입을 지정안해도 number라는것을 추론해준다
+
+### js 변환 시 사라지는 부분을 파악
+
+```
+function add(x:number,y:number):number;
+function add(x,y){
+    return x+y
+}
+```
+
+- 위 처럼 함수 타입만 설정하고 밑에 함수를 선언해도 위에 타입함수는 타입지정처리가 된다.
+
+```
+aa = 'hello' as unknown as number
+```
