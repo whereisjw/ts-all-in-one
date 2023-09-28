@@ -15,3 +15,10 @@ var arr = ['12', '45'];
 var arr2 = [123, 456];
 var arr3 = [1, 2, '33']; // 튜플타입
 var obj = { lat: 12, lon: 2 };
+/* const head:Element = document.querySelector('#head')!;
+console.log(head); */
+var head = document.querySelector('#head');
+if (head) {
+    head.innerHTML = 'hello world';
+    console.log(head);
+}

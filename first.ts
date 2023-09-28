@@ -27,3 +27,15 @@ const arr2 : number[] = [123,456]
 const arr3 : [number,number,string] =[1,2,'33'] // 튜플타입
 
 const obj :{lat:number,lon:number} = {lat:12,lon:2}
+
+
+
+/* const head:Element = document.querySelector('#head')!;
+console.log(head); */
+
+const head = document.querySelector('#head');
+if (head) {
+    head.innerHTML = 'hello world'
+  console.log(head);
+}
+

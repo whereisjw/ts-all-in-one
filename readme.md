@@ -61,3 +61,8 @@ function add(x,y){
 ```
 aa = 'hello' as unknown as number
 ```
+
+### never 타입과 느낌표(non-null assertion)
+
+- never 관련 자료
+- https://ui.toast.com/weekly-pick/ko_20220323
