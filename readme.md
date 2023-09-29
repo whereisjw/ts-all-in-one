@@ -66,3 +66,12 @@ aa = 'hello' as unknown as number
 
 - never 관련 자료
 - https://ui.toast.com/weekly-pick/ko_20220323
+
+### 템플릿리터럴타입
+
+```
+type World = "world" | "hell";
+
+// type Greeting = "hello world"
+type Greeting = `hello ${World}`;
+```
