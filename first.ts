@@ -44,7 +44,16 @@ if (head) {
 const a: string = 'hello'
 const b:String = 'hi' */
 
-type World = "world" | "hell";
+/* type World = "world" | "hell"; */
 
 // type Greeting = "hello world"
-type Greeting = `hello ${World}`;
+/* type Greeting = `hello ${World}`; */
+
+const ODirection = {
+    Up: 0,
+    Down: 1,
+    Left: 2,
+    Right: 3,
+  } as const;
+
+  const a = ODirection.Up
