@@ -95,3 +95,8 @@ const ODirection = {
 
   const a = ODirection.Up
 ```
+
+### union intersection
+
+const aa: A | B = { a: 'hello', b: 'world' }; // 여러개중에 하나만 있으면 된다.
+const bb: A & B = { a: 'hello', b: 'world' }; // 모든 속성이 다 있어야함

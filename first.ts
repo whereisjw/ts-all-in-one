@@ -48,6 +48,12 @@ const b:String = 'hi' */
 
 // type Greeting = "hello world"
 /* type Greeting = `hello ${World}`; */
+/* const enum EDirection {
+    Up,
+    Down,
+    Left,
+    Right,
+  }
 
 const ODirection = {
     Up: 0,
@@ -56,4 +62,11 @@ const ODirection = {
     Right: 3,
   } as const;
 
-  const a = ODirection.Up
+  const a = ODirection.Up */
+
+type A = { a: string };
+const a: A = { a: 'hello' };
+
+interface B { a: string };
+const b: B = { a: 'hello' };
+
