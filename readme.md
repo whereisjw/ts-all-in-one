@@ -99,4 +99,19 @@ const ODirection = {
 ### union intersection
 
 const aa: A | B = { a: 'hello', b: 'world' }; // 여러개중에 하나만 있으면 된다.
-const bb: A & B = { a: 'hello', b: 'world' }; // 모든 속성이 다 있어야함
+const bb: A & B = { a: 'hello', b: 'world' }; // 모든 속성이 다 있어야함.
+
+### 타입 상속과 네이밍규칙
+
+```
+type Animal = {breath:true}
+type 포유류 = Animal&{breed:true}
+type Human = 포유류&{think:true}
+
+const zeroCho :Human = {breath:true,breed:true,think:true}
+```
+
+// 네이밍룰 ? type interface
+// interface에는 I type에는 T enum에는 E 붙이는 방법이 있음
+// 요즘에는 안붙이는게 국룰임(마우스 올리면 다 나옴, 그리고 interface 나눠서 굳이 이득이 없음)
+// 근데 나는 개인적으로 붙임 그래야 가독성이 더 좋은것같음
