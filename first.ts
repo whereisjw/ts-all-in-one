@@ -81,7 +81,7 @@ const zeroCho :Human = {breath:true,breed:true,think:true} */
 // 요즘에는 안붙이는게 국룰임(마우스 올리면 다 나옴, 그리고 interface 나눠서 굳이 이득이 없음)
 // 근데 나는 개인적으로 붙임 그래야 가독성이 더 좋은것같음
 
-type A = string | number; //넓은타입
+/* type A = string | number; //넓은타입
 type B = string; // 좁은타입
 type C  = string & number; // 공집합
 
@@ -90,4 +90,11 @@ type ObjB = {age:number}// 넓은타입
 type ObjC = {name:string,age:number}//좁은타입
 type ObjAB = A|B 
 // 객체는 상세할수록 좁은타입
-// any는 합집합 never는 공집합이라고 생각하면된다.
+// any는 합집합 never는 공집합이라고 생각하면된다. */
+
+
+/* function a():void{
+  return undefined
+} */
+
+

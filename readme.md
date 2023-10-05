@@ -131,3 +131,7 @@ type ObjAB = A|B
 
 // 객체는 상세할수록 좁은타입
 // any는 합집합 never는 공집합이라고 생각하면된다.
+
+# any unknown 대입표
+
+![Alt text](image.png)
