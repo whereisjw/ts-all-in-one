@@ -6,4 +6,4 @@ var nico = {
 function divide(a, b) {
     return a / b;
 }
-/* divide('hi')  파라미터의 값의 형태 뿐만아니라 갯수도 체크를 해준다*/ 
+/* divide('hi')  파라미터의 값의 형태 뿐만아니라 갯수도 체크를 해준다*/

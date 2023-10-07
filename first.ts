@@ -9,7 +9,6 @@ const f: any = true
 const add: (x: number, y: number) => number = (x, y) => x + y;
 const obj: { lat: number, lon: number } = { lat: 37.5, lon: 127.5 }; */
 
-
 /* function add(x:number,y:number):number;
 function add(x,y){
     return x+y
@@ -28,8 +27,6 @@ const arr3 : [number,number,string] =[1,2,'33'] // 튜플타입
 
 const obj :{lat:number,lon:number} = {lat:12,lon:2} */
 
-
-
 /* const head:Element = document.querySelector('#head')!;
 console.log(head); */
 
@@ -38,7 +35,6 @@ if (head) {
     head.innerHTML = 'hello world'
   console.log(head);
 } */
-
 
 /* 
 const a: string = 'hello'
@@ -76,7 +72,7 @@ type Human = 포유류&{think:true}
 
 const zeroCho :Human = {breath:true,breed:true,think:true} */
 
-// 네이밍룰 ? type interface 
+// 네이밍룰 ? type interface
 // interface에는 I type에는 T enum에는 E 붙이는 방법이 있음
 // 요즘에는 안붙이는게 국룰임(마우스 올리면 다 나옴, 그리고 interface 나눠서 굳이 이득이 없음)
 // 근데 나는 개인적으로 붙임 그래야 가독성이 더 좋은것같음
@@ -91,7 +87,6 @@ type ObjC = {name:string,age:number}//좁은타입
 type ObjAB = A|B 
 // 객체는 상세할수록 좁은타입
 // any는 합집합 never는 공집합이라고 생각하면된다. */
-
 
 /* function a():void{
   return undefined
@@ -153,6 +148,4 @@ const promises = await Promise.allSettled([Promise.resolve('a'), Promise.resolve
 const errors = promises.filter(isRejected);
  */
 
-
 /* Promise -> Pending -> Settled(resovled, Rejected) */
-promsiese.them().catch()
