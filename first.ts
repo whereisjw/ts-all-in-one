@@ -149,3 +149,20 @@ const errors = promises.filter(isRejected);
  */
 
 /* Promise -> Pending -> Settled(resovled, Rejected) */
+
+/* const x: {} = "hello";
+const y: Object = "hi"; //대문자 Object와 {} 는 모든타입 (null과 undefined 제외)
+
+//unknown = {} | null | undefined */
+
+interface A {
+  a: string;
+  b: string;
+  c: string;
+}
+
+interface A {
+  [key: string]: string;
+} //인덱스 시그니처
+
+type B = "Human" | "Mammal" | "Animal";

@@ -5,6 +5,7 @@
 - npm init -y
 - npm i typescript
 - npx tsc --init
+- tsconfig.json에 아래 삽입 더 많은 기능은 공식문서 참조할것
 
 ```
 {
@@ -132,6 +133,29 @@ type ObjAB = A|B
 // 객체는 상세할수록 좁은타입
 // any는 합집합 never는 공집합이라고 생각하면된다.
 
-# any unknown 대입표
+### any unknown 대입표
 
 ![Alt text](image.png)
+
+### Object 와 {} 타입
+
+```
+const x: {} = "hello";
+const y: Object = "hi"; //대문자 Object와 {} 는 모든타입 (null과 undefined 제외)
+
+//unknown = {} | null | undefined
+```
+
+### 인덱스드 시그니처
+
+```
+interface A {
+  a: string;
+  b: string;
+  c: string;
+}
+
+interface A {
+  [key: string]: string;
+} //인덱스 시그니처
+```
