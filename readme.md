@@ -159,3 +159,25 @@ interface A {
   [key: string]: string;
 } //인덱스 시그니처
 ```
+
+### implements 와 public private protected
+
+```
+interface AZ {
+  a: string;
+  b: string;
+}
+
+class B implements AZ {
+  private a = "12";
+  protected b = "11";
+}
+
+
+```
+
+- interface 에 implements 는 굳이 쓸필요없지만 객체지향언어에서 추상에 의존하지말고 구현에 의존해야할때는 사용
+- (public) vs private vs protected
+- 둘다 해당클래스 내부에서 사용이 가능함
+- protected private 둘다 인스턴스에서 사용이 불가능함
+- protected 는 extends로 상속받은 class에서는 사용이 가능함
