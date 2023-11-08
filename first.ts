@@ -195,3 +195,14 @@ class B implements AZ {
 // 둘다 해당클래스 내부에서 사용이 가능함
 // protected private 둘다 인스턴스에서 사용이 불가능함
 // protected 는 extends로 상속받은 class에서는 사용이 가능함
+
+/* function add<T>(x: T, y: T): T {
+  return x + y;
+}
+
+add(1, 2);
+ */
+
+const a = (b: { children: string } = { children: "zero" }) => {};
+
+const add = <T extends string>(x: T, y: T) => ({ x, y });
