@@ -150,12 +150,39 @@ interface A {
 
 type B = "Human" | "Mammal" | "Animal";
  */
-var A = /** @class */ (function () {
-    function A(a, b) {
-        if (b === void 0) { b = 123; }
-        this.a = "123";
-        this.b = 123;
-    }
-    return A;
-}());
-var a = new A("zz");
+/* class A {
+  a: string;
+  b: number;
+  constructor(a: string, b: number = 123) {
+    this.a = "123";
+    this.b = 123;
+  }
+}
+
+const a = new A("zz");
+
+type AA = A; */
+/* interface AZ {
+  a: string;
+  b: string;
+}
+
+class B implements AZ {
+  private a = "12";
+  protected b = "11";
+} */
+// interface 에 implements 는 굳이 쓸필요없지만 객체지향언어에서 추상에 의존하지말고 구현에 의존해야할때는 사용
+// (public) vs private vs protected
+// 둘다 해당클래스 내부에서 사용이 가능함
+// protected private 둘다 인스턴스에서 사용이 불가능함
+// protected 는 extends로 상속받은 class에서는 사용이 가능함
+/* function add<T>(x: T, y: T): T {
+  return x + y;
+}
+
+add(1, 2);
+ */
+var a = function (b) {
+    if (b === void 0) { b = { children: "zero" }; }
+};
+var add = function (x, y) { return ({ x: x, y: y }); };

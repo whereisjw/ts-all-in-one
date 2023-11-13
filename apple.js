@@ -35,35 +35,7 @@ class Person {
 let 자식 = new Person("kim");
 console.log(자식);
  */
-/* class User {
-  protected x = 10;
+function 함수(x) {
+    return x - 1;
 }
-
-// private과 유사 하지만 extends 된 class에서 사용가능
-
-class newUser extends User {
-  doThis() {
-    this.x = 20;
-  }
-}
- */
-/* class User {
-  static x = 10;
-  y = 10;
-}
-
-let 자식 = new User(); */
-// static키워드 부모 class에 직접 부여됨 자식들은 물려받지못함
-// class의 주요기능인 object복사기능을 막는 역할
-// private / protected / public 과 동시에 사용가능
-var User = /** @class */ (function () {
-    function User() {
-        this.intro = User.skill + "전문가입니다";
-    }
-    User.skill = "js";
-    return User;
-}());
-var 철수 = new User();
-User.skill = "ts";
-var 철수2 = new User();
-console.log(철수, 철수2);
+var e = 함수(100);

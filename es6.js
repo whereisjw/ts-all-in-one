@@ -28,7 +28,7 @@ function a() {
 }
 a(); //undefine */
 
-function Human(name) {
+/* function Human(name) {
   this.name = name;
 }
 
@@ -45,7 +45,7 @@ obj = {
   },
 };
 
-obj.sayName(); //wonkie가 두번나옴
+obj.sayName(); */ //wonkie가 두번나옴
 
 /* sayName.bind({ name: "jiwoncho" })();
 sayName.apply({ name: "jiwoncho" });

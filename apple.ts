@@ -57,7 +57,7 @@ let 자식 = new User(); */
 // static키워드 부모 class에 직접 부여됨 자식들은 물려받지못함
 // class의 주요기능인 object복사기능을 막는 역할
 // private / protected / public 과 동시에 사용가능
-
+/* 
 class User {
   static skill = "js";
   intro = User.skill + "전문가입니다";
@@ -69,3 +69,25 @@ User.skill = "ts";
 let 철수2 = new User();
 
 console.log(철수, 철수2);
+ */
+
+/* type Name = string | number;
+ */
+
+/* function 함수<T>(x: T[]): T {
+  return x[0];
+}
+
+let as = 함수<number>([4, 2]);
+let asv = 함수<string>(["4", "2"]);
+console.log(as + 1, asv);
+ */
+
+interface LengthCheck {
+  length: number;
+}
+
+function 함수<T extends number>(x: T) {
+  return x - 1;
+}
+let e = 함수<number>(100);
