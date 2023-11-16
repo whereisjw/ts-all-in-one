@@ -182,7 +182,30 @@ class B implements AZ {
 
 add(1, 2);
  */
-var a = function (b) {
-    if (b === void 0) { b = { children: "zero" }; }
-};
-var add = function (x, y) { return ({ x: x, y: y }); };
+/* const a = (b: { children: string } = { children: "zero" }) => {};
+
+const add = <T extends string>(x: T, y: T) => ({ x, y });
+ */
+/* interface Array<T> {
+  forEach(
+    callbackfn: (value: T, index: number, array: T[]) => void,
+    thisArg?: any
+  ): void;
+}
+
+[1, 2, 3].forEach((v) => {
+  console.log(v);
+});
+
+["1", "2", "3"].forEach((v) => {
+  console.log(v);
+});
+
+interface IString<T> {
+  map<U>(
+    callbackfn: (value: T, index: number, array: T[]) => U,
+    thisArg?: any
+  ): U[];
+}
+
+const strings = [1, 2, 3].map((v) => v.toString()); */

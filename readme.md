@@ -189,3 +189,30 @@ const a = (b: { children: string } = { children: "zero" }) => {};
 
 const add = <T extends string>(x: T, y: T) => ({ x, y });
 ```
+
+### map 과 forEach 타입분석
+
+```
+interface Array<T> {
+  forEach(
+    callbackfn: (value: T, index: number, array: T[]) => void,
+    thisArg?: any
+  ): void;
+}
+
+[1, 2, 3].forEach((v) => {
+  console.log(v);
+});
+
+["1", "2", "3"].forEach((v) => {
+  console.log(v);
+});
+
+interface IString<T> {
+  map<U>(
+    callbackfn: (value: T, index: number, array: T[]) => U,
+    thisArg?: any
+  ): U[];
+}
+const strings = [1, 2, 3].map((v) => v.toString());
+```
