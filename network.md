@@ -20,3 +20,11 @@
 - http 요청은 header 와 body 로 구성되어있음
 - RFC7231 참고하면 좋음 표준을 보더라도 최신을 보는게 좋음 2616도 많지만 (1999년에 만들어짐)
 - 예를들면 GET DELETE는 예전에는 요청에 body를 가질 수없다고 했으나 요즘에는 신경을 안쓴다고 스펙이 바뀜
+
+# URL,URI,ORIGIN
+
+- http://www.tacoding.com/book/2
+- /book/2 을 uri 또는 url 굳이 구분하지 않고 둘다 써도되는데 node에서는 url쓰긴함
+- origin 은 프로토콜+호스트네임+포트번호의 조합임(CORS할떄 origin)
+
+# HTTP method 와 REST API
