@@ -52,3 +52,14 @@
 - 300 리다이렉트 응답하기 애매할때 리다이렉트처리
 - 400 클라이언트에러 - 서버는 기능을 제대로 수행했으나 클라이언트에서 에러가 발생
 - 500 서버에러 - 서버의 에러
+
+# 컨텐츠협상과 MIME TYPE
+
+- ACCEPT : MIME Type 대분류/확장자 image/png, image/jpeg video/mp4 application.json(서버 주도 협상)
+
+# Authorization, 기타 헤더, 커스텀 헤더
+
+- Authorization: Basic
+- Authorization: Bearer + jwt토큰
+- Authorization: Digest
+- referrer policy
